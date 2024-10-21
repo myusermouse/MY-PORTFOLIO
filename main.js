@@ -5,6 +5,6 @@ let toogleBtn = document.getElementById('toggle'),
 
 toogleBtn.onclick = function() {
     body.classList.toggle('dark-mode');
-    nightImg.src = "/icon/light.png";
+    nightImg.src = "./icon/light.png";
     nightImg.style.paddingLeft = "3px"
 }
