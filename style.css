@@ -112,15 +112,17 @@ header .toggle{
     position: relative;
 }
 .home-left .myphoto{
-    width: 370px!important;
+    width: 380px!important;
     transition: all 0.2s;
+    position: absolute;
+    top: -10px;
 }
 .home-left .myphoto:hover{
     transform: rotate(1deg);
     width: 360px!important;
 }
 .home-left .myphoto-back{
-    
+   width: 400px; 
 }
 .Home-content .home-right{
     padding-top: 10px;
