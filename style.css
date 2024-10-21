@@ -14,11 +14,14 @@
     --primary-backcolor: #F8F8F8;
     
     --button-shadow: rgba(0,0,0,0.3);
-    --primary-maincolor: #377BFF;
+    --primary-maincolor: #0DC3EF;
+    
+    --header-backColor: #F6F6F6;
 }
 .dark-mode{
     --primary-color: #EAEAEA;
-    --primary-backcolor: #171717;
+    --primary-backcolor: #000000;
+    --header-backColor: #000000;
 }
 
 .im{
@@ -29,6 +32,7 @@
 body{
     color: var(--primary-color);
     background: var(--primary-backcolor);
+    transition: all 0.4s!important;
 }
 header{
     width: 100%;
@@ -37,13 +41,15 @@ header{
     justify-content: space-between;
     position: fixed;
     box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-    position: relative;
+    z-index: 50;
+    background: var(--header-backColor);
+    transition: all 0.4s!important;
 }
 .h-left .mylogo{
     width: 35px;
     padding-top: 3px;
     padding-left: 5px;
-    filter: brightness(1);
+    filter: brightness(0.9);
 }
 
 .h-right a{
@@ -54,6 +60,8 @@ header{
     padding-bottom: 2px;
     padding: 7px;
     position: relative;
+    font-size: 0.9em;
+    font-weight: 400;
 }
 .h-right a:before{
     content: "";
@@ -85,4 +93,95 @@ header .toggle{
 }
 
 /**** Main *****/
+.main{
+    padding-top: 50px;
+}
+.Home-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.Home-content .home-left{
+    width: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.home-left .myphoto{
+    width: 370px!important;
+    transition: all 0.2s;
+}
+.home-left .myphoto:hover{
+    transform: rotate(1deg);
+    width: 360px!important;
+}
+.home-left .myphoto-back{
+    
+}
+.Home-content .home-right{
+    padding-top: 10px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+.home-right .intro{
+    width: 430px;
+   /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;*/
+    padding: 3px;
+}
+.home-right .intro h1{
+    width: 100%;
+    font-size: 2em;
+}
+.home-right .intro h5{
+    font-size: 1em;
+}
+.intro p{
+    font-size: 1rem;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.social-media a img{
+    width: 60px;
+    transition: all 0.4s;
+}
+.social-media a img:hover{
+    width: 70px;
+    transform: rotate(5deg);
+}
+
+.Button .hire-me-btn{
+    width: 250px;
+    height: 35px;
+    background: var(--primary-maincolor);
+    color: var(--primary-color);
+    outline: none;
+    cursor: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1em;
+    font-weight: 500;
+    box-shadow: 0 1px 2px var(--button-shadow);
+    transition: all 0.4s;
+    margin-top: 10px;
+    
+}
+.Button .hire-me-btn:hover{
+    filter: brightness(0.8);
+}
+
+/***** Home close *********/
+
 
