@@ -226,7 +226,8 @@ header .toggle{
     background: var(--primary-maincolor);
     z-index: -1;
     max-height: 310px;
-    transition: 0.2s linear
+    transition: 0.2s linear;
+    border-radius: 10px;
 }
 .first-project:hover::before{
     height: 310px;
