@@ -21,9 +21,9 @@
           <img src="./icon/mylogo.png" class="im mylogo">
       </div>
       <div class="h-right">
-          <a href="#">Home</a>
-          <a href="#">Project</a>
-          <a href="#">Contact</a>
+          <a href="#section1">Home</a>
+          <a href="#section2">Project</a>
+          <a href="#section3">Contact</a>
           <a href="#">other</a>
       </div>
       
@@ -31,7 +31,7 @@
           <img src="./icon/night.png" class="im night-m" id="night-img">
       </div>
   </header>
-  <div class="main">
+  <div class="main" id="section1">
       <div class="Home-content">
           <div class="home-left">
               <img src="./image/myphoto.png" class="im myphoto">
@@ -58,7 +58,7 @@
         </div>
       </div>
       
-      <div class="project-content">
+      <div class="project-content" id="section2">
           <h1>Project</h1>
           <div class="first-project">
               <img src="./project/first-project.jpg" class="im f-pic">
@@ -83,11 +83,20 @@
            </div>
       </div>
       
-      <div class="contact-content">
-          <h1>Contact</h1>
+      <div class="contact-content" id="section3">
+          <h1 class="c-title">Contact</h1>
           <div class="contact">
-          </div>
-      </div>
+              <div class="image">
+                  <img src="./icon/contact.png" class="im contact-icon">
+              </div>
+              <div class="img-data">
+                   <div class="con"><a href="#"><p>Email</p><img class="cont" src="./icon/social media/mail.png"></a></div>
+                 <div class="con"><a href=""><p>Facebook</p><img class="cont" src="./icon/social media/facebook.png"></a></div>
+               <div class="con"><a href=""><p>Instagram</p><img class="cont" src="./icon/social media/instagram.png"></a></div>
+               <div class="con"><a href=""><p>LinkedIn</p><img class="cont" src="./icon/social media/linkedin.png"></a></div>
+           </div>
+        </div>
+     </div>
   </div>
   <script src="main.js"></script>
 </body>
