@@ -28,6 +28,9 @@
     width: 100px;
 }
 
+htnl{
+    scroll-behavior: smooth;
+}
 /*************** Start *****************/
 body{
     color: var(--primary-color);
